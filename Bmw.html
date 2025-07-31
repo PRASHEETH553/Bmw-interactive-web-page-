@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Responsive Navbar Toggle Script */
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">BMW</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="section home-section" id="home">
+    <h1>Welcome to BMW Showcase</h1>
+    <img src="https://www.bmw.in/content/dam/bmw/common/all-models/m-series/m5-sedan/2020/navigation/bmw-5-series-sedan-m-automobiles-lci-modelfinder.png" alt="BMW Car" class="responsive-img" />
+  </section>
+
+  <section class="section" id="about">
+    <h2>About BMW</h2>
+    <p>BMW is a German multinational company which produces luxury vehicles and motorcycles. The company was founded in 1916 as a manufacturer of aircraft engines.</p>
+  </section>
+
+  <section class="section" id="videos">
+    <h2>BMW Videos</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="your-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="product-gallery">
+      <img src="https://www.bmw.in/content/dam/bmw/common/all-models/x-series/x5/2023/navigation/bmw-x-series-x5-modelfinder.png" alt="BMW X5" class="responsive-img" />
+      <img src="https://www.bmw.in/content/dam/bmw/common/all-models/i-series/i7/2022/navigation/bmw-i7-modelfinder.png" alt="BMW i7" class="responsive-img" />
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 BMW. All Rights Reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
