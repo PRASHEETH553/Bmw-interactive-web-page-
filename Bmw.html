@@ -2,86 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BMW Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Responsive Navbar Toggle Script */
-    .menu-toggle {
-      display: none;
-      font-size: 1.5rem;
-      color: white;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-      }
-    }
-  </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">BMW</div>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#videos">Videos</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="header">
+    <div class="logo">
+      <img src="bmlogo.png" alt="BMW Logo" />
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="section home-section" id="home">
-    <h1>Welcome to BMW Showcase</h1>
-    <img src="https://www.bmw.in/content/dam/bmw/common/all-models/m-series/m5-sedan/2020/navigation/bmw-5-series-sedan-m-automobiles-lci-modelfinder.png" alt="BMW Car" class="responsive-img" />
-  </section>
-
-  <section class="section" id="about">
-    <h2>About BMW</h2>
-    <p>BMW is a German multinational company which produces luxury vehicles and motorcycles. The company was founded in 1916 as a manufacturer of aircraft engines.</p>
-  </section>
-
-  <section class="section" id="videos">
-    <h2>BMW Videos</h2>
-    <div class="video-container">
-      <video controls>
-        <source src="your-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+  <section id="home" class="home-section">
+    <img src="b3.jpg" alt="BMW Banner" class="hero-img"/>
+    <div class="hero-text">
+      <h2>WELCOME TO BMW</h2>
+      <p>THE ULTIMATE DRIVING MACHINES</p>
+    </div>
+    <img src="t7.jpg" alt="BMW Showcase" class="secondary-img"/>
+    <div class="section-text">
+      <h2>THE ULTIMATE DRIVING MACHINE</h2>
+      <p>ALL NEW BMW MOTORCYCLES PRICE LIST & MODELS IN INDIA - BMW MOTORRAD</p>
     </div>
   </section>
 
-  <section class="section" id="products">
-    <h2>Our Products</h2>
-    <div class="product-gallery">
-      <img src="https://www.bmw.in/content/dam/bmw/common/all-models/x-series/x5/2023/navigation/bmw-x-series-x5-modelfinder.png" alt="BMW X5" class="responsive-img" />
-      <img src="https://www.bmw.in/content/dam/bmw/common/all-models/i-series/i7/2022/navigation/bmw-i7-modelfinder.png" alt="BMW i7" class="responsive-img" />
+  <section id="about" class="about-section">
+    <div class="section-text">
+      <h2>THE DRUG DEALER NEVER GET EDICTED</h2>
+      <p>Designed for urban riding enjoyment: our future-centric Scooters, eParkourers and Concept Bikes.</p>
+    </div>
+    <img src="bn3.jpg" alt="BMW Scooter" />
+    <div class="section-text">
+      <h2>DROP A GEAR AND DISAPPEAR</h2>
+      <p>Bayerische Motoren Werke AG, commonly abbreviated to BMW, is a German multinational manufacturer of luxury vehicles and motorcycles headquartered in Munich, Bavaria, Germany.</p>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <section id="videos" class="videos-section">
+    <video src="bmv1.mp4" controls autoplay loop></video>
+    <video src="bmv2.mp4" controls autoplay loop muted></video>
+    <video src="bmv3.mp4" controls autoplay loop muted></video>
+  </section>
+
+  <section id="products" class="products-section">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="t1.jpg" alt="BMW X7"/>
+        <h3>BMW X7</h3>
+        <p>ON ROAD ₹ 12,700,000</p>
+        <a href="https://www.bmw.in/en/all-models.html?detail=X_THE-BMW-X7" target="_blank">Buy 🛒</a>
+      </div>
+      <div class="product-card">
+        <img src="t2.jpg" alt="BMW M4"/>
+        <h3>BMW M4 COMPETITION</h3>
+        <p>ON ROAD ₹14,000,000</p>
+        <a href="https://www.bmw.in/en/all-models.html?detail=M_BMW-M4-COMPETITION-COUP%C3%89-WITH-M-xDRIVE" target="_blank">Buy 🛒</a>
+      </div>
+      <div class="product-card">
+        <img src="t3.jpg" alt="BMW M340i"/>
+        <h3>THE BMW M340i</h3>
+        <p>ON ROAD ₹72,27,000</p>
+        <a href="https://www.bmw.in/en/all-models.html?detail=M_THE-BMW-M340i" target="_blank">Buy 🛒</a>
+      </div>
+      <div class="product-card">
+        <img src="t4.jpg" alt="BMW R NineT"/>
+        <h3>BMW R NineT Scrambler</h3>
+        <p>ON ROAD ₹17,00,000</p>
+        <a href="https://www.bmw-motorrad.in/en/models/heritage/rninet.html" target="_blank">Buy 🛒</a>
+      </div>
+      <div class="product-card">
+        <img src="t5.jpg" alt="BMW S1000 RR"/>
+        <h3>BMW S 1000 RR</h3>
+        <p>ON ROAD ₹20,50,000</p>
+        <a href="https://www.bmw-motorrad.in/en/models/sport/s1000rr.html" target="_blank">Buy 🛒</a>
+      </div>
+      <div class="product-card">
+        <img src="t6.jpg" alt="BMW G310 R"/>
+        <h3>BMW G 310 R</h3>
+        <p>ON ROAD ₹2,90,000</p>
+        <a href="https://www.bmw-motorrad.in/en/models/roadster/g310r.html" target="_blank">Buy 🛒</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>CONTACT US</h2>
+    <div class="contact-container">
+      <div class="map">
+        <img src="p1.png" usemap="#boom" alt="BMW Location" />
+        <map name="#boom">
+          <area shape="rect" coords="36,32,194,328" href="https://www.google.com/maps/dir/.../data=..." target="_blank" />
+        </map>
+      </div>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" />
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Enter your email" />
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 BMW. All Rights Reserved.
+    <p>&copy; 2025 BMW India. All rights reserved.</p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("active");
-    }
-  </script>
 </body>
 </html>
